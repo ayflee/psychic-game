@@ -11,11 +11,24 @@ document.onkeyup = function (event) {
     var userGuess = event.key;
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
+    // for (var i = 0; i < letters.length; i++) {
+    //     if (userGuess [i] === letters) {
+    //         lettersguessed++;
+    //         numGuesses--;    
+        
+    //     } else {
+    //         lettersguessed+0;
+    //         numGuesses-0;
+    //         alert ("You've already chosen that letter!")
+    //         };
+    // };
+
     if (letters.indexOf (userGuess) > -1) {
         if (userGuess === computerGuess) {
         wins++;
         numGuesses = 9;
         lettersguessed = [];
+        alert ("You win!!")
         };
     
         if (userGuess != computerGuess) {
@@ -27,6 +40,7 @@ document.onkeyup = function (event) {
         numGuesses = 9;
         losses++;
         lettersguessed = [];
+        alert ("You lost!!")
         };
     };
 
