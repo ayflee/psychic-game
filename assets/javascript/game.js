@@ -11,19 +11,9 @@ document.onkeyup = function (event) {
     var userGuess = event.key;
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-    // for (var i = 0; i < letters.length; i++) {
-    //     if (userGuess [i] === letters) {
-    //         lettersguessed++;
-    //         numGuesses--;    
-        
-    //     } else {
-    //         lettersguessed+0;
-    //         numGuesses-0;
-    //         alert ("You've already chosen that letter!")
-    //         };
-    // };
 
-    if (letters.indexOf (userGuess) > -1) {
+
+    if (lettersguessed.indexOf(userGuess) > -1) {
         if (userGuess === computerGuess) {
         wins++;
         numGuesses = 9;
@@ -44,7 +34,7 @@ document.onkeyup = function (event) {
         };
     };
 
-var html = 
+    var html = 
 			"<h1> The Psychic Game </h1>" +
 			"<p>Guess what letter I'm thinking of!</p>" +
 			"<p>Wins: " + wins + "</p>" +
