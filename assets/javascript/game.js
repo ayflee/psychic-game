@@ -42,8 +42,8 @@ document.onkeyup = function (event) {
 			"<p>Guesses Left: " + numGuesses + "</p>" +
 			"<p>Your Guesses so far: " + lettersguessed.join(", ") + "</p>";
 
-			document.getElementById("game").innerHTML = html;
-
+			document.getElementById("game").innerHTML = html;	
 			
-			
-		};
+        };
+        
+    // --> linked to portfolio page: https://ayflee.github.io/Bootstrap-Portfolio/portfolio.html -
