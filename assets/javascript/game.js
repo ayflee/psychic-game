@@ -13,7 +13,7 @@ document.onkeyup = function (event) {
 
 
 
-    if (lettersguessed.indexOf(userGuess) > -1) {
+    if (letters.indexOf(userGuess) > -1) {
         if (userGuess === computerGuess) {
         wins++;
         numGuesses = 9;
